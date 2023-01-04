@@ -1,0 +1,43 @@
+뉴렉처
+
+설정 > 생성 > configure > create module-info.java > 
+
+pom.xml > open with > xml.editor > build 위에 <dependencies> 생성
+ > https://mvnrepository.com/artifact/org.springframework/spring-context/5.3.24 에서 maven 복붙하면 라이브러리 자동생성
+
+
+
+
+2. https://mvnrepository.com/artifact/org.springframework/spring-webmvc/5.3.24 > maven 복붙
+
+
+3. 스프링 홈페이지 (https://spring.io/) > 프로젝트 > 스프링 프레임워크 > learn > 5.3.24 refer > core > 1.2.1 configuration Metadate에 있는 코드 복사
+ > 이클립스 메인 폴더에 resources 생성 > other > xml > xml file > 붙여넣기 
+
+
+Hello 생성 > 클래스 위에 @Component > public void 위에 @GetMapping
+
+
+
+4. new > other > maven project > catalog(internal) > filter(webapp) > 선택 다음 > kr.co.ch02 > Ch02 > 끝
+
+
+application.xml에 
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="kr.co.ch02"/>
+을 처리해두면 base-package 에 선언된 채널 하위폴더는 
+Component : application.xml에 bean 선언 생략 가능하게 해줌
+xmlns:context="http://www.springframework.org/schema/context"
+
+
+
+
+
+
