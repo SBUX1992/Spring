@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user1::list</title>
+		<title>user1::modify</title>
 	</head>
 	<body>
 		<h3>user1 수정</h3>

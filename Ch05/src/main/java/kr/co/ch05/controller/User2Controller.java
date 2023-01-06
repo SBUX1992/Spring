@@ -12,27 +12,9 @@ public class User2Controller {
 	@Autowired
 	private User2Service service;
 	
-	@GetMapping("/user2/list")
-	public String list() {
-		
-	}
 	
-	@GetMapping()
-	public String register() {
-		
-	}
+	
 
-	public String register() {
-		
-	}
-	
-	public String modify() {
-		
-	}
-	
-	public String modify() {
-		
-	}
 	
 	
 }
